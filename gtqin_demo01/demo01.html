@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+    <script type="text/javascript" src='./demoClass/Component.js' charset="utf-8"></script>
+    <script type="text/javascript" src='./demoClass/LikeButton.js' charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/babel" charset="utf-8">
+      const wrapper = document.querySelector('.wrapper')
+      mount(new LikeButton({ bgColor: 'red' }), wrapper)
+      mount(new LikeButton(), wrapper)
+      mount(new RedBlueButton(), wrapper)
+    </script>
+
+
+    <body>
+      <div class='wrapper' id='wrapper'></div>
+    </body>
+
+
+  </body>
+</html>

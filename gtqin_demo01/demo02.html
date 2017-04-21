@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+<div id="example"></div>
+<script type="text/babel">
+    class HelloMessage extends React.Component{
+        render(){
+            return <h1>Hello {this.props.name}</h1>;
+        }
+    }
+    class Output extends React.Component{
+        render(){
+            return (
+                    <div>
+                        <HelloMessage name="John" />
+                    </div>
+            );
+        }
+    }
+    ReactDOM.render(<Output />,document.getElementById('example'));
+</script>
+</body>
+</html>
